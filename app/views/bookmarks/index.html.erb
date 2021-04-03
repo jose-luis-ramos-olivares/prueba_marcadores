@@ -3,7 +3,7 @@
 <h1>Bookmarks</h1>
 
 <div class="form">
-    
+    <%= render 'form', bookmark: @bookmark %>
 </div>
 
 <table>
@@ -17,7 +17,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id = "bookmarks">
     <% @bookmarks.each do |bookmark| %>
       <tr>
         <td><%= bookmark.title %></td>
