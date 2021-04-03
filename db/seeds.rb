@@ -8,28 +8,31 @@
 
 require 'faker'
 
+#crear registros de kind
 20.times do |i|
     title = Faker::Commerce.department + (i + 1).to_s
     Kind.create!(title: title)
 end
 
+#creaer registros de categories
 10.times do |i|
-    title = Faker::Hipster.word + (i + 1).to_s
+    title = Faker::Cannabis.type + (i + 1).to_s
     is_public = [true, false].sample
     Seed = Category.create!(title: title, is_public: is_public)
-    10.times do |j|
-        title = Faker::Hipster.word + (j + 1).to_s
+    5.times do |j|
+        title = Faker::Cannabis.type + (j + 1).to_s
         is_public = [true, false].sample
         category_id = Seed.id
         Category.create!(title: title, is_public: is_public, category_id: category_id)
     end
 end
 
+#crear registros de bookmarks
 categories = Category.all
 kinds = Kind.all
 
-10.times do |i|
-    title = Faker::Hipster.word + (i + 1).to_s
+20.times do |i|
+    title = Faker::Music.album + (i + 1).to_s
     url = Faker::Internet.url
     Bookmark.create!(title: title, url: url)
 end

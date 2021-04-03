@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Bookmarks</h1>
+<h3>Create your Bookmarks</h3>
 
 <div class="form">
     <%= render 'form', bookmark: @bookmark %>
 </div>
 
-<table>
-  <thead>
+<table class="table table-striped">
+  <thead class="thead-dark">
     <tr>
       <th>Title</th>
       <th>Url</th>
@@ -42,4 +42,4 @@
 
 <br>
 
-<%= link_to 'New Bookmark', new_bookmark_path %>
+<!-- <%= link_to 'New Bookmark', new_bookmark_path %> -->
