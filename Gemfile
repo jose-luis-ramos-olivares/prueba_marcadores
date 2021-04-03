@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use faker to create fake data
 gem 'faker'
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
