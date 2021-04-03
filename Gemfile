@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'faker'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'chartkick'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
